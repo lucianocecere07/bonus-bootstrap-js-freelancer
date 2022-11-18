@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BONUS-FREELANCER</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar bg-dark">
+      <div class="container-fluid w-75">
+        <span class="navbar-brand text-info">Portfolio</span>
+        <span class="navbar-brand text-info"><u>CONTACT ME</u></span>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="container-fluid bg-info p-4">
+      <div class="row text-center">
+        <div class="col">
+          <div class="card bg-info border border-0 mx-auto" style="width: 250px">
+            <img src="./img/undraw_profile_pic_ic5t.svg" class="card-img-top" alt="Profilo">
+            <div class="card-body">
+              <h1 class="card-title">Pinco Pallo</h1>
+              <p class="card-text">WEB DESIGNER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container p-4">
+      <h1 class="portfolio text-center">PORTFOLIO</h1>
+      <div class="row g-5">
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/cabin.png" class="card-img-top p-0 m-0" alt="Cabin">
+            <h5 class="card-title text-center">Cabin Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/cake.png" class="card-img-top p-0 m-0" alt="Cake">
+            <h5 class="card-title text-center">Cake Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/circus.png" class="card-img-top p-0 m-0" alt="Circus">
+            <h5 class="card-title text-center">Circus Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/game.png" class="card-img-top p-0 m-0" alt="Game">
+            <h5 class="card-title text-center">Game Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/safe.png" class="card-img-top p-0 m-0" alt="Safe">
+            <h5 class="card-title text-center">Safe Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <div class="card border border-1">
+            <img src="./img/portfolio/submarine.png" class="card-img-top p-0 m-0" alt="Submarine">
+            <h5 class="card-title text-center">Submarine Website</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid bg-info py-4 px-5">
+      <h1 class="form text-center">WANT AN OFFER?</h1>
+      <form class="row g-3" onsubmit="clickSend(event)">
+        <div class="col-12 col-md-6">
+          <label for="inputName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="inputName" placeholder="Enter your first name...">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="inputLastName" class="form-label">Last Name</label>
+          <input type="text" class="form-control" id="inputLastName" placeholder="Enter your last name...">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="inputEmail" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="inputEmail" placeholder="name@example.com">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="inputHours" class="form-label">Hours requested</label>
+          <input type="number" class="form-control" id="inputHours" placeholder="Hours requested...">
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="inputWork" class="form-label">Type of work</label>
+          <select id="inputWork" class="form-select">
+            <option selected value="0">Select the type of work</option>
+            <option value="1">Backend Development</option>
+            <option value="2">Frontend Development</option>
+            <option value="3">Project Analisys</option>
+          </select>
+        </div>
+        <div class="col-12 col-md-6">
+          <label for="inputCode" class="form-label">Discount Code</label>
+          <input type="text" class="form-control" id="inputCode">
+        </div>
+        <div class="col-12">
+          <label for="inputMessage" class="form-label">Message</label>
+          <input type="text" class="form-control" id="inputMessage" placeholder="Specify your work commission..."
+            style="height: 150px">
+        </div>
+        <div class="col-12 text-center">
+          <button type="submit" class="btn btn-warning">Send</button>
+        </div>
+      </form>
+      <label id="prezzo-totale" class="form-control mt-3">Il prezzo finale è di:</label>
+    </div>
+  </main>
+
+  <footer>
+    <div class="container-fluid bg-dark text-center text-white-50 py-4">
+      <h3>LOCATION</h3>
+      <br>
+      <p class="fw-light">2215 John Daniel Drive</p>
+      <p class="fw-light">Clark, MO 65243</p>
+      <br>
+      <p class="fs-6 fw-light">Copyright &#169; Your Website 2021</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>
