@@ -62,10 +62,10 @@ let arrayPortfolio = [
 
 let raccoltaPortfolio = document.getElementById("raccoltaPortfolio");
 
-for(let i = 0; i < arrayPortfolio.length; i++){
+for (let i = 0; i < arrayPortfolio.length; i++) {
     let carta = arrayPortfolio[i];
-    raccoltaPortfolio.innerHTML += 
-    `
+    raccoltaPortfolio.innerHTML +=
+        `
     <div class="col-12 col-md-6 col-xl-4">
         <div class="card border border-1">
             <img src="${carta.foto}" class="card-img-top p-0 m-0" alt="logo">
@@ -108,9 +108,11 @@ function clickSend(event) {
 
     if (codiceInseritoUtente) {
         prezzoOre = (prezzoOre * 0.75).toFixed(2);
+        //togliere codice usato
         arrayCodici.splice(inputCodice);
     } else {
-        document.getElementById("inputCode").style.color="red";
+        //cambia colore in rosso se non valido
+        document.getElementById("inputCode").style.color = "red";
         alert("Discont Code non valido o mancante. Calcolo tariffa prezzo pieno.");
         prezzoOre = prezzoOre;
     };
