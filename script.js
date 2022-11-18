@@ -108,6 +108,7 @@ function clickSend(event) {
 
     if (codiceInseritoUtente) {
         prezzoOre = (prezzoOre * 0.75).toFixed(2);
+        arrayCodici.splice(inputCodice);
     } else {
         document.getElementById("inputCode").style.color="red";
         alert("Discont Code non valido o mancante. Calcolo tariffa prezzo pieno.");
