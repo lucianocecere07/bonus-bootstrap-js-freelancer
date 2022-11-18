@@ -7,7 +7,15 @@ Se poi l’utente inserisce un codice promozionale tra i seguenti YHDNU32, JANJC
 Se il codice inserito non è valido, informate l’utente che il codice è sbagliato e calcolate il prezzo finale senza applicare sconti.
 Mostrare il risultato del calcolo del prezzo finale in una “forma umana” in un apposito tag HTML appena sotto il bottone send.
 - Ricordatevi che se non state bene attenti, Javascript vi fa le magie con i tipi :slightly_smiling_face:
-- Ricordatevi che il form ha un comportamento “strano” quando fate click sul bottone Send che è di tipo submit (type=submit).*/
+- Ricordatevi che il form ha un comportamento “strano” quando fate click sul bottone Send che è di tipo submit (type=submit).
+
+CONSIDERAZIONI FINALI e BONUS:
+Mentre come bonus javascript dovete far diventare il codice sconto inserito di colore rosso, qualora quello inserito non sia valido.
+Inoltre se il codice fornito è valido, eliminare quel codice dall’elenco dei codici sconto disponibili, il codice sconto non sarà più usabile.
+
+Super Bonus: Creare una struttura dati adeguata per contenere tutte le informazioni relative ai progetti presenti nella sezione “Portfolio”. Rimuovere quindi le card dal markup nel file html e stamparle in pagina dinamicamente tramite l’utilizzo di JavaScript.
+*/
+
 
 //------------------esercizio----------------------//
 
@@ -16,6 +24,60 @@ Mostrare il risultato del calcolo del prezzo finale in una “forma umana” in 
 
 //codici promozionali in un array
 arrayCodici = ["YHDNU32", "JANJC63", "PWKCN25", "SJDPO96", "POCIE24"];
+
+
+//superbonus (card tramite js)
+//array carte
+let arrayPortfolio = [
+    {
+        sito: "Cabin Website",
+        foto: "./img/portfolio/cabin.png"
+    },
+
+    {
+        sito: "Cake Website",
+        foto: "./img/portfolio/cake.png"
+    },
+
+    {
+        sito: "Circus Website",
+        foto: "./img/portfolio/circus.png"
+    },
+
+    {
+        sito: "Game Website",
+        foto: "./img/portfolio/game.png"
+    },
+
+    {
+        sito: "Safe Website",
+        foto: "./img/portfolio/safe.png"
+    },
+
+    {
+        sito: "Submarine Website",
+        foto: "./img/portfolio/submarine.png"
+    }
+];
+
+let raccoltaPortfolio = document.getElementById("raccoltaPortfolio");
+
+for(let i = 0; i < arrayPortfolio.length; i++){
+    let carta = arrayPortfolio[i];
+    raccoltaPortfolio.innerHTML += 
+    `
+    <div class="col-12 col-md-6 col-xl-4">
+        <div class="card border border-1">
+            <img src="${carta.foto}" class="card-img-top p-0 m-0" alt="logo">
+            <h5 class="card-title text-center">${carta.sito}</h5>
+            <div class="text-center mb-3">
+              <a class="btn btn-info" href="#" role="button">Preview</a>
+              <a class="btn btn-outline-info" href="#" role="button">Visit site</a>
+            </div>
+        </div>
+    </div>
+    `
+};
 
 
 //--------------------------------------------//
